@@ -1,7 +1,7 @@
 import useSWR from "swr";
 import axios from "axios";
 import { useState } from "react";
-import { View, Text, FlatList, StyleSheet, Button } from "react-native";
+import { View, Text, FlatList } from "react-native";
 import { styled } from "nativewind";
 
 const fetcher = (url: any) => axios.get(url).then((res) => res.data);
@@ -57,11 +57,11 @@ export default function Page() {
       <FlatList
         data={currentItems}
         renderItem={renderItem}
-        keyExtractor={(item) => item.player}
+        keyExtractor={(item) => item.username}
       />
       <StyledView className="flex-row justify-between mt-4">
         <StyledView className="flex-1 mr-2">
-          <StyledView className="bg-blue-500 p-2 rounded">
+          <StyledView className="bg-slate-900 p-1 rounded">
             <StyledText
               className={`text-center text-white ${currentPage === 1 ? 'opacity-50' : ''}`}
               onPress={handlePreviousPage}
@@ -71,9 +71,9 @@ export default function Page() {
             </StyledText>
           </StyledView>
         </StyledView>
-        <StyledText className="text-white">{`Halaman ${currentPage} dari ${totalPages}`}</StyledText>
+        <StyledText className="text-white my-auto">{`Halaman ${currentPage} dari ${totalPages}`}</StyledText>
         <StyledView className="flex-1 ml-2">
-          <StyledView className="bg-blue-500 p-2 rounded">
+          <StyledView className="bg-slate-900 p-1 rounded">
             <StyledText
               className={`text-center text-white ${currentPage === totalPages ? 'opacity-50' : ''}`}
               onPress={handleNextPage}
