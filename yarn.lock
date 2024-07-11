@@ -3348,6 +3348,11 @@ expo-constants@^16.0.2, expo-constants@~16.0.0:
     "@expo/config" "~9.0.0"
     "@expo/env" "~0.3.0"
 
+expo-doctor@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/expo-doctor/-/expo-doctor-1.6.1.tgz#426ea9e759684b941f5b8b6d5a4137fc2aa3fbd0"
+  integrity sha512-n80Bzs3iEnkOSIKrxJTNE2QwTpmWx2aJQpDVymlfK4Ur11ocuirUZy7IfsPbs9PGGXvxE4bIH3SGq3QghRNM4Q==
+
 expo-file-system@~17.0.1:
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/expo-file-system/-/expo-file-system-17.0.1.tgz#b9f8af8c1c06ec71d96fd7a0d2567fa9e1c88f15"

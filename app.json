@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "reforged-native",
-    "slug": "reforged-native",
+    "slug": "reforged",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,10 +19,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.iamlexivale.reforged"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5518f93d-732f-43f0-b44c-003e0f18fbbf"
+      }
+    },
+    "owner": "iamlexivale"
   }
 }
